@@ -4,10 +4,56 @@
     <title>Wikis in Organisationen</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
+        
+/* useful css class-room phrases is a small selection for css classes used inside content areas */
+/* more on https://github.com/klml/usefulclassroomphrases */
+
+.clear,
+.cb { clear:both; }
+.cl { clear:left; }
+.cr { clear:right; }
+.left { float:left;}
+.right { float:right;}
+.none { float: none !important;}
+.marginleft,
+img[src$='#left'], /* use blind hash as workaround if class can't set, eg markdown etc */
+img.left { float:left;margin:0 5px 5px 0;}
+.marginright,
+img[src$='#right'],
+img.right { float:right;margin:0 0 5px 5px;}
+.block { display: block;}
+.border { border: 1px solid gray;}
+.depot, /* is for htmlsnippets moved and used by JS */
+.hidden { display: none; }
+.thx, .alerta, .notice { border: 1px solid #8da7cc; border-left-width: 20px;color: green;font-size: 130%;padding: 5px;}
+.row2 dl dt {clear: both; float: left; font-weight: bold; width: 20%;} /* 2-column for key value lists .row2 is above if you use not changable sections like markdown-lists */
+.row2 dl dd {float: right; width: 78%; margin-left: 0}
+
+.lead {font-size: 110%;background-color:#F6F6F6;}
+
+img[src='Wikibuch_Seibert_Preuss_Rauer_Cover.png'] {
+width:150px;
+}
+
 body.remark-container {
-font: 22px 'helvetica';
-background: #8DA7CC;
-line-height: 1.5;
+    font: 22px 'helvetica';
+    color:#191919;
+    background: #8DA7CC;
+    line-height: 1.5;
+}
+blockquote {
+    background: #F6F6F6;
+    color: gray;
+    font-style: italic;
+    padding: 2px 40px;
+    margin: 0;
+}
+cite {
+    font-size:14px;
+    }
+strong {
+    color: #000;
+    font-size:120%;
 }
     </style>
   </head>
@@ -21,6 +67,166 @@ class: center, middle
 ---
 
 ## Wer und Wie
+
+Klaus Mueller  
+<small>Software Projektleiter</small>
+
+* Bau und Rettungswesen
+* QM Beauftragter
+* Wikis seit 2004
+* Enterprise Einsatz seit 2008
+
+##### Vortrag
+
+* __offene__ Diskussion (alle)
+* Ziel: Agenda und Zeit
+
+---
+## Was ist ein Wiki
+
+
+* Hyper__text__-System
+* Technologische __Einfachheit__ und Flexibilität (Browser, WYSIWIG)
+* __Offener Zugang__ und __explizite Kontrolle__
+* __Kollaboration__ und eindeutige Urheberschaft
+* __Universelle__ (key and value) und skalierbare Datenverwaltung
+
+---
+
+## Was? Anwendung
+
+* Von der Idee oder zum Projekt
+* Schulungsmaterial
+* internes Vorschlagswesen
+
+Wikis beinhalten __Texte__, aber auch strukturierte Daten...
+
+---
+## Was nicht! Abgrenzung
+
+... __keine Konkurrenz__ für spezielle und strukturierte Software
+
+* Ticketsystem
+* CRM
+* Personal Information Management
+* Enterprise-Resource-Planning
+* ...
+
+Verknüpfung
+
+* aus dem wiki heraus (hyperlinks)
+* in das wiki hinein (software, tickets)
+
+Ausgangspunkt für Idee und Planung, denn: lieber in einem Wiki als nirgendwo.
+
+---
+## Ordnung 
+
+> eine Wiki widerspricht jeglichen Regeln relationaler Datenstrukturen
+
+* *keine* Ordnerstruktur aber __Kategorien__ und __Namensräume__ (Projekt, Howto etc)
+* Exceltabelle ⇾ __KeyValue__ Speicher.
+
+Vorteile
+
+* Matrixform durch __Links__ und Transklusionen
+* Struktur eines Dokuments __passt sich an__
+* __gemeinsame Sprache__ als Ordnungsmuster
+
+---
+
+## Kultur 
+
+* kollaboratives __Wissen__ aber eindeutige Urheberschaft
+* __Fehlerkultur__ die Fehler erlaubt und verbessert
+
+In Hierarchie: __Führung__ und __Gruppe__ muss wohlwollend sein
+
+
+... und Begeisterung erlauben.
+
+
+---
+
+## Kollaboration: Motivation 
+
+![220px-Baby_diving.jpg](220px-Baby_diving.jpg#right)
+
+> Sei mutig
+
+<cite>de.wikipedia.org/wiki/Wikipedia:Sei_mutig</cite>
+
+Fehlerkultur
+
+* besser __90%__ als __0%__
+* die restlichen __10%__ schafft jemand™ anderes
+
+
+
+nicht __demotivieren__ durch
+
+* aussperren
+* vorgegebenes Regelkonstrukt
+
+---
+## Wikigärtner
+
+da kein __Zwang__ in die Struktur,
+
+kleine Gruppe muss als __Wikigärtner__ gesamtverantwortlich sein
+
+* interne Verlinkung
+* Kategorisierung
+* formatieren (Überschrift)
+* Schulung
+* Konfliktlösung
+
+Arbeitsmittel der Gärtner ...
+
+---
+
+## Kollaboration: Kontrolle
+
+* Kontrolle muss __aktiv__ erfolgen (Push vs. Pull)
+
+Versionierung
+
+
+* Änderungsdarstellung (diff)
+* Benachrichtigung
+  * e-Mail
+  * Beobachtungsliste
+  * Recent Changes (rss)
+
+Kontrolle zur __Fehlerbehebung__ und __Schulung__
+
+
+---
+
+## Einführung
+
+* __Erste Anwendung__ als nukleus definieren
+  * Projekttagebuch
+  * Mitarbeiterdaten
+  * Tipps und Tricks
+* einfache __Schulung__ (ändern, neu erstellen)
+* __Support__ und Verantwortung benennen
+
+
+
+
+---
+
+### Literatur
+
+![](Wikibuch_Seibert_Preuss_Rauer_Cover.png)
+
+* Martin Seibert, Sebastian Preuss und Matthias Rauer: __Enterprise Wikis__: Die erfolgreiche Einführung und Nutzung von Wikis in Unternehmen ISBN 978-3-8349-2827-6
+
+
+## Kontakt
+
+m@klml.de
 
 
     </textarea>
