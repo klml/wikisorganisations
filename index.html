@@ -40,7 +40,15 @@ body.remark-container {
     font: 22px 'helvetica';
     color:#191919;
     background: #8DA7CC;
+    background-color: #393939;
     line-height: 1.5;
+}
+.remark-slide-content {
+    background-color: #3d3d3d;
+    color: #fff7f7;
+}
+.remark-slide-content > * > *:hover {
+    background-color: grey;
 }
 .blue {
     color: #8DA7CC;
@@ -57,7 +65,6 @@ cite {
     font-size:14px;
     }
 strong {
-    color: #000;
     font-size:120%;
 }
     </style>
@@ -74,12 +81,12 @@ class: center, middle
 ## Wer und Wie
 
 Klaus Mueller  
-<small>Software Projektleiter</small>
 
 * Bau und Rettungswesen
 * QM Beauftragter
-* Wikis seit 2004
-* Enterprise Einsatz seit 2008
+* Wikis (2004)
+* Enterprise Einsatz (2008)
+* DevOps (2018)
 
 
 ???
@@ -96,13 +103,13 @@ you: Was wissen Sie über Organsiations Wikis; welche Erfahrungen haben Sie ?
 * Hyper-__text__-System mit einfachen Zugang (Browser)
 * Vom Leser einfach __änderbar__ (nicht nur im Kommentar)
 * Kollaboration: __Offener Zugang__ und __explizite Kontrolle__ (eindeutige Urheberschaft)
-* __Universelle__ (key and value) und skalierbare Datenverwaltung
+* __Universelle__ (natürliche Begriffe) und skalierbare Datenverwaltung
 
 ### Beispiele
 
 * wikipedia.org
 * Städtewikis
-* rezeptewiki.org
+* kochwiki.org
 * Enterprise Wikis
 
 ???
@@ -117,10 +124,10 @@ you: Was wissen Sie über Organsiations Wikis; welche Erfahrungen haben Sie ?
 ---
 ## Zielgruppe und Anspruch
 
-* wikipedia.org ⇾ universale Wissenschaft
-* Städtewikis ⇾ regionale und kommerzielle Information
-* ![](./img/rezeptewiki.gif#right)rezeptewiki.org ⇾ Howtos
-* Firmen ⇾ ?
+* wikipedia.org ⇒ universale Wissenschaft
+* Städtewikis ⇒ regionale und kommerzielle Information
+* ![](./img/rezeptewiki.gif#right)kochwiki.org ⇒ Howtos
+* Firmen ⇒ Enterprise Wikis
 
 ???
 
@@ -176,10 +183,10 @@ aus https://de.wikibooks.org/wiki/Wikis_in_Organisationen:_Anwendung#Administrat
 * das Internet
 * ...
 
-Verknüpfung
+Aber __Verknüpfungen__
 
-* aus dem wiki heraus (hyperlinks)
-* in das wiki hinein (software, tickets)
+* aus dem Wiki heraus (hyperlinks)
+* in das Wiki hinein (software, tickets)
 
 Ausgangspunkt für Idee und Planung, denn: lieber in einem Wiki als nirgendwo.
 
@@ -248,13 +255,13 @@ In Hierarchie: __Führung__ und __Gruppe__ muss wohlwollend sein
 
 > Sei mutig
 
-Fehlerkultur
+Fehlerkultur:
 
 * besser __90%__ als __0%__
 * die restlichen __10%__ schafft jemand™ anderes
 
 
-nicht __demotivieren__ durch
+nicht __demotivieren__ durch:
 
 * aussperren
 * vorgegebenes Regelkonstrukt
@@ -273,7 +280,7 @@ Bild aus https://commons.wikimedia.org/wiki/File:Baby_diving.jpg
 
 ![Wikigärtnern sprichwörtlich](./img/220px-Intellipedia_shovel.jpg#right)
 
-die __Wikigärtner__ setzen gemeinsame Regeln durch
+die __Wikigärtner__ setzen gemeinsame Regeln durch:
 
 * interne Verlinkung
 * Kategorisierung
@@ -304,13 +311,11 @@ Bild aus https://commons.wikimedia.org/wiki/File:Intellipedia_shovel.jpg
 
 Kontrolle muss __aktiv__ erfolgen (Push vs. Pull)
 
-Versionierung ermöglicht
+Versionierung ermöglicht:
 
 * __Benachrichtigung__ auch auf Teile
-  * e-Mail
-  * Beobachtungsliste
-  * Dashboard
-  * Recent Changes (rss)
+  * selektive Beobachtungsliste oder jede Änderung
+  * per e-Mail, Dashboard oder RSS
 * __Änderungsdarstellung__ (diff)
 
 ---
